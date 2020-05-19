@@ -17,6 +17,8 @@ int main ()
     char *s= "Hola";
     int x;
     int y;
+	int i;
+	int j;
 
 	write(1, "FT_: ", 5);	
     x = ft_write(1, s, 4);
@@ -27,6 +29,10 @@ int main ()
 
     printf("FT_: %d\n", x);
     printf("ORI: %d\n", y);
+
+	i = ft_strlen(s);
+	j= strlen(s);
+	printf("%d%d", i, j);
 
     return (0);
 }
