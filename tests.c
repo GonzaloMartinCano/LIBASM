@@ -18,11 +18,15 @@ int main ()
     int x;
     int y;
 
-    x = ft_write(1, &c, 1);
-    y = write(1, &c, 1);
+	write(1, "FT_: ", 5);	
+    x = ft_write(1, s, 4);
+	write(1, "\n", 1);
+	write(1, "ORI: ", 5);
+    y = write(1, s, 4);
+	write(1, "\n", 1);
 
-    printf("%d\n", x);
-    printf("%d\n", x);
+    printf("FT_: %d\n", x);
+    printf("ORI: %d\n", y);
 
     return (0);
 }
