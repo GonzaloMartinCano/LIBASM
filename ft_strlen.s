@@ -2,12 +2,12 @@
 			global		_ft_strlen
 
 _ft_strlen:
-			mov rax, 0x0 ; count set to 0 - rax is returned value
+			mov rax, 0x0 					; ponemos rax a 0, sera nuestro contador
 			_start_loop:
-				cmp byte [rdi + rax], 0x0 ; compare rdi + rax char to \0
-				jz _end_loop ; if compare true then go to flag _end_loop
-				inc rax	; increment count
-				jmp _start_loop ; restart loop
+				cmp byte [rdi + rax], 0x0 	; comparamos la posicion del string con \0
+				jz _end_loop 				; si es asi terminamos
+				inc rax						; si no incrementamos el contador
+				jmp _start_loop				; volvemos a hacer la comparativa
 			_end_loop:
 			ret
 	

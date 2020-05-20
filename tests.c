@@ -15,11 +15,13 @@ int main ()
 {
     char c = 'a';
     char *s= "Hola";
-    int x;
-    int y;
+	char *p= "Holas";
+	int x;
+	int y;
 	int i;
 	int j;
 
+	
 	write(1, "FT_: ", 5);	
     x = ft_write(1, s, 4);
 	write(1, "\n", 1);
@@ -32,7 +34,9 @@ int main ()
 
 	i = ft_strlen(s);
 	j= strlen(s);
-	printf("%d%d", i, j);
-
-    return (0);
+	printf("%d%d\n", i, j);
+	
+	printf("%d\n", ft_strcmp(s, p));
+	printf("%d\n", strcmp(s, p));
+	return (0);
 }
