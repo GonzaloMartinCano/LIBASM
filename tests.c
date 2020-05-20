@@ -38,5 +38,11 @@ int main ()
 	
 	printf("%d\n", ft_strcmp(s, p));
 	printf("%d\n", strcmp(s, p));
+
+	char z[100];
+	ft_strcpy(z, p);
+	printf("%s\n", z);
+	strcpy(z, p); 
+	printf("%s\n", z);
 	return (0);
 }
