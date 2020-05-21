@@ -105,7 +105,7 @@ void 	writeTest()
 	printf("\n");
 
 
-}
+}/*
 void 	readTest()
 {
 	int		fd;
@@ -157,7 +157,7 @@ void 	readTest()
 	remove("emptyFile");
 
 	printf("\n");
-}
+}*/
 
 int main()
 {
@@ -166,6 +166,6 @@ int main()
 	strcmpTest();
 	strdupTest();
 	writeTest();
-	readTest();
+//	readTest();
 	return 0;
 }
