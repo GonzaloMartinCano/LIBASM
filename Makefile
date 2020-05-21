@@ -1,8 +1,8 @@
 NAME = libasm.a
 
-FUN = ft_write.s ft_strlen.s ft_strcmp.s ft_strcpy.s ft_read.s ft_strdup.s
+FUN = src/ft_write.s src/ft_strlen.s src/ft_strcmp.s src/ft_strcpy.s src/ft_read.s src/ft_strdup.s
 
-OBJ = ft_write.o ft_strlen.o ft_strcmp.o ft_strcpy.o ft_read.o ft_strdup.o
+OBJ = src/ft_write.o src/ft_strlen.o src/ft_strcmp.o src/ft_strcpy.o src/ft_read.o src/ft_strdup.o
 
 
 all: $(NAME)
@@ -23,4 +23,4 @@ fclean: clean
 re: fclean all
 
 test: re
-	@gcc testshard.c $(NAME) -o test
+	@gcc tests/testshard2.c $(NAME) -o test
