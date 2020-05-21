@@ -36,20 +36,20 @@ void		test_ft_read()
 
 	printf("\x1b[32mft_read:\x1b[0m\n");
 	printf("	\x1b[34m[1]\x1b[0m \x1b[36m'open(\"main.c\", O_RDONLY)' '' '0'\x1b[0m\n");
-	fd = open("testlib.c", O_RDONLY);
+	fd = open("tests.c", O_RDONLY);
 	ret = read(fd, buffer, 10);
 	printf("		\x1b[33mMAQUINA\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
 	close(fd);
-	fd = open("testlib.c", O_RDONLY);
+	fd = open("tests.c", O_RDONLY);
 	ret = read(fd, buffer, 10);
 	printf("		\x1b[33mMIOMIOM\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
 	close(fd);
 	printf("	\x1b[34m[2]\x1b[0m \x1b[36m'open(\"Makefile\", O_RDONLY)' '' '50'\x1b[0m\n");
-	fd = open("Makefile", O_RDONLY);
+	fd = open("testshard.c", O_RDONLY);
 	ret = read(fd, buffer, 50);
 	printf("		\x1b[33mMAQUINA\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 50));
 	close(fd);
-	fd = open("Makefile", O_RDONLY);
+	fd = open("testshard.c", O_RDONLY);
 	ret = read(fd, buffer, 50);
 	printf("		\x1b[33mMIOMIOM\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 50));
 	close(fd);
@@ -153,14 +153,14 @@ void		test_ft_strcmp()
 	printf("		\x1b[33mMAQUINA\x1b[0m %d\n", strcmp("bbbonjour", "bbonjour"));
 	printf("		\x1b[33mMIOMIOM\x1b[0m %d\n", ft_strcmp("bbbonjour", "bbonjour"));
 	printf("	\x1b[34m[7]\x1b[0m \x1b[36m'NULL' 'bbonjour'\x1b[0m\n");
-	printf("		\x1b[33mMAQUINA\x1b[0m %s\n", "SEGMENTATION FAULT");
+/*	printf("		\x1b[33mMAQUINA\x1b[0m %s\n", "SEGMENTATION FAULT");
 	printf("		\x1b[33mMIOMIOM\x1b[0m %d\n", ft_strcmp(NULL, "bbonjour"));
 	printf("	\x1b[34m[8]\x1b[0m \x1b[36m'NULL' 'NULL'\x1b[0m\n");
 	printf("		\x1b[33mMAQUINA\x1b[0m %s\n", "SEGMENTATION FAULT");
 	printf("		\x1b[33mMIOMIOM\x1b[0m %d\n", ft_strcmp(NULL, NULL));
 	printf("	\x1b[34m[9]\x1b[0m \x1b[36m'' 'NULL'\x1b[0m\n");
 	printf("		\x1b[33mMAQUINA\x1b[0m %s\n", "SEGMENTATION FAULT");
-	printf("		\x1b[33mMIOMIOM\x1b[0m %d\n", ft_strcmp("", NULL));
+	printf("		\x1b[33mMIOMIOM\x1b[0m %d\n", ft_strcmp("", NULL));*/
 }
 
 void		test_ft_strcpy()

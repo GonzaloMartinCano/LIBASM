@@ -14,8 +14,8 @@ char	*ft_strdup(const char *s1);
 int main ()
 {
     char c = 'a';
-    char *s= "Hola";
-	char *p= "Holas";
+    char *s= "bbbonjour";
+	char *p= "bbonjour";
 	int x;
 	int y;
 	int i;
@@ -34,7 +34,7 @@ int main ()
 
 	i = ft_strlen(s);
 	j= strlen(s);
-	printf("%d%d\n", i, j);
+	printf("%d\n%d\n", i, j);
 	
 	printf("%d\n", ft_strcmp(s, p));
 	printf("%d\n", strcmp(s, p));
@@ -45,4 +45,4 @@ int main ()
 	strcpy(z, p); 
 	printf("%s\n", z);
 	return (0);
-}
+	}

@@ -4,7 +4,7 @@
 _ft_strcpy:
 			mov		rcx, 0x0			; ponemos rcx a 0
 			cmp		rsi, 0					; comprobamos que src no sea \0
-			jz		return					; en caso que si terminamos
+			jz		isnull					; en caso que si copiamos el Null, tambien podriamos mandarlo a return y causar el mismo seg. fault. que el original
 			jmp		copy					; nos vamos a la funcion copiar
 
 increment:
@@ -16,6 +16,9 @@ copy:
 			cmp		dl, 0					; comprobamos si dl ha llegado a nulo
 			jnz		increment				; en caso negativo incrementamos para seguir
 
+isnull:
+			mov		rax, rsi
+			ret
 return:	
 			mov		rax, rdi				; pasamos dst(rdi) a rax para retornarlo
 			ret		
