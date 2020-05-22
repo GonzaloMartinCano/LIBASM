@@ -6,10 +6,11 @@
 /*   By: gmartin- <gmartin-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/22 11:37:19 by gmartin-          #+#    #+#             */
-/*   Updated: 2020/05/22 11:42:49 by gmartin-         ###   ########.fr       */
+/*   Updated: 2020/05/22 14:14:08 by gmartin-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+# ifndef LIBASM_H
 # define LIBASM_H
 
 # include <stdio.h>
@@ -23,4 +24,5 @@ char	 	*ft_strdup(const char *src);
 size_t		ft_strlen(const char *str);
 ssize_t		ft_write(int fd, const void *buf, size_t count);
 ssize_t		ft_read(int fd, void *buf, size_t count);
-# endif
+
+#endif

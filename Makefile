@@ -23,4 +23,4 @@ fclean: clean
 re: fclean all
 
 test: re
-	@gcc tests/testshard2.c $(NAME) -o test
+	@gcc tests/testshard.c $(NAME) -o test
