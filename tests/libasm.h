@@ -6,7 +6,7 @@
 /*   By: gmartin- <gmartin-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/22 11:37:19 by gmartin-          #+#    #+#             */
-/*   Updated: 2020/05/22 14:14:08 by gmartin-         ###   ########.fr       */
+/*   Updated: 2020/05/28 11:55:32 by gmartin-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <fcntl.h>
+# include <errno.h>
 
 int			ft_strcmp(const char *s1, const char *s2);
 char		*ft_strcpy(char * dst, const char * src);

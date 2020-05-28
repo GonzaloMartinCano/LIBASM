@@ -6,7 +6,7 @@
 /*   By: gmartin- <gmartin-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/22 11:37:19 by gmartin-          #+#    #+#             */
-/*   Updated: 2020/05/22 14:11:17 by gmartin-         ###   ########.fr       */
+/*   Updated: 2020/05/28 13:44:41 by gmartin-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,8 +117,8 @@ void 	writeTest()
 
 	printf("\n");
 
-
-}/*
+}
+/*
 void 	readTest()
 {
 	int		fd;
