@@ -1,6 +1,6 @@
 # LIBASM
 
-El objetivo de este proyecto es familiarizarse con el lenguaje ensamblador.
+El objetivo de este proyecto es familiarizarse con el lenguaje ensamblador, reproduciendo algunas de las funciones mas comunes, reescribiendolas en asm64 bits.
 
 Requisito tener instalado:
 
